@@ -5,11 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet"> 
+
+    <style>
+        body{
+            font-family: 'Poor Story', cursive;
+            background-color: rgb(190, 182, 182);
+        }
+        h2{
+            font-size: 70px;
+        }
+        h2:hover{
+            color: #53273a;
+            cursor: pointer;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            height: 90vh;
+            background-color: #aa865e;
+            margin: 1%;
+        }
+        #left-box{
+            text-align: center;
+            padding-top: 10%;
+        }
+        #page-title{
+            font-size: 200px;
+            margin: 0;
+            padding: 0;
+        }
+        footer{
+            padding-left: 1%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <a href="recipes/ackee-and-saltfish.html">Ackee and Saltfish</a>
-    <a href="recipes/curry-goat.html">Curry Goat</a>
-    <a href="recipes/red-peas-soup.html">Red Peas Soup</a>
+    <div class="content">
+        <div id="left-box">
+            <img src="images/fallFood.jpg" alt="English Fall Picnic">
+        </div>
+            
+        <div id="right-box">
+            <!--
+            Odin instructions said to use the <a> tag to show page links but I dislike the appearance of raw links
+    
+            <a href="recipes/banana-muffins.html">Banana Muffins</a>
+            <a href="recipes/chai-latte.html">Chai Latte</a>
+            <a href="recipes/red-peas-soup.html">Red Peas Soup</a>
+            -->
+            <h1 id="page-title">Odin Recipes</h1>
+            <h2 class="recipes" onclick="location.href = 'recipes/banana-muffins.html';">Banana Muffins</h2>
+            <h2 class="recipes" onclick="location.href = 'recipes/chai-latte.html';">Chai Latte</h2>
+            <h2 class="recipes" onclick="location.href = 'recipes/red-peas-soup.html';">Red Peas Soup</h2>
+        </div>
+    </div>
+    <footer>
+        <p>The Odin Project - Project 1: Recipes | Created by Carrima Hewitt, 2022</p>
+    </footer>
 </body>
 </html>
