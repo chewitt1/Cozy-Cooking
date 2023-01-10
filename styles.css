@@ -21,19 +21,19 @@ a:hover{
     cursor: pointer;
 }
 
-#site-title:hover{
-    color: #eed9c3;;
+.site-title:hover{
+    color: #eed9c3;
     cursor: pointer;
 }
 
-#content{
+.content{
     background-color: #eed9c3;
     flex: 2;
     display: flex;
 }
 
 .sidebar{
-    width: 20vw;
+    width: 15vw;
     padding: 10px;
     background-color: #a78347;
     display: flex;
@@ -53,8 +53,9 @@ a{
     text-align: center;
 }
 
-#gallery-title{
-    margin-bottom: 20px;
+.gallery-title{
+    margin-bottom: 50px;
+    font-size: 5em;
 }
 .recipes{
     display: flex;
@@ -92,7 +93,35 @@ a{
     background-size: 300px;
 }
 
+
 footer{
     padding: 5px;
     margin-left: auto;
+}
+
+.recipe-page-border{
+    background-color: #a18b67;
+    flex: 2;
+    padding: 20px;
+}
+
+.recipe-page{
+    background-color: #eed9c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-pic1b{
+    margin-top: -30px;
+    height: 400px;
+    width: 300px;
+    background-image: url("./images/banana-muffins-nobkgrnd.png");
+    background-size: 300px;
+}
+
+.steps{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
 }
