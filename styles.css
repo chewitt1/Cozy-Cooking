@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e3b261;
+}
+
+header{
+    background-color: #e3b261;
+    padding: 10px;
+}
+
+a:hover{
+    color: #e3b261;
+    cursor: pointer;
+}
+
+#site-title:hover{
+    color: #eed9c3;;
+    cursor: pointer;
+}
+
+#content{
+    background-color: #eed9c3;
+    flex: 2;
+    display: flex;
+}
+
+.sidebar{
+    width: 20vw;
+    padding: 10px;
+    background-color: #a78347;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    margin-top: 5px;
+}
+
+.gallery{
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery-title{
+    margin-bottom: 20px;
+}
+.recipes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.recipe{
+    padding: 10px;
+}
+
+.recipe-pic-box{
+    border: 1px solid;
+    padding: 5px;
+}
+
+.recipe-pic1{
+    height: 300px;
+    width: 300px;
+    background-image: url("./images/banana-muffins.jpg");
+    background-size: 300px;
+}
+
+.recipe-pic2{
+    height: 300px;
+    width: 300px;
+    background-image: url("./images/chai-latte.jpg");
+    background-size: 300px;
+}
+
+.recipe-pic3{
+    height: 300px;
+    width: 300px;
+    background-image: url("./images/red-peas-soup.jpg");
+    background-size: 300px;
+}
+
+footer{
+    padding: 5px;
+    margin-left: auto;
+}
