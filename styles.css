@@ -1,127 +1,105 @@
+/*Palette:
+  - #DAB1A0
+  - #C1AE9F
+  - #A2A998
+  - #887B92
+  - #947E88
+  - #F3ECE8
+  - #D7BAAD
+*/
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    height: 100vh;
     display: flex;
+    height: 80vh;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #e3b261;
+    align-items: center;
+    padding: 20px;
+    background-color: #F3ECE8;
+    color: #707070;
 }
 
 header{
-    background-color: #e3b261;
-    padding: 10px;
-}
-
-a:hover{
-    color: #e3b261;
-    cursor: pointer;
-}
-
-.site-title:hover{
-    color: #eed9c3;
-    cursor: pointer;
+    display: flex;
+    gap: 30px;
+    font-size: 2.5rem;
 }
 
 .content{
-    background-color: #eed9c3;
     flex: 2;
-    display: flex;
 }
 
-.sidebar{
-    width: 15vw;
-    padding: 10px;
-    background-color: #a78347;
+.outline{
+    border: 0.1rem solid #887B92;
+    width: 85vw;
+    height: 75vh;
+    margin: 1rem 0;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    padding: 0.3rem;
+}
+
+.img-box{
+    background-color: #D7BAAD;
+    flex: 2;
+}
+
+.recipes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 a{
     text-decoration: none;
-    color:black;
-    margin-top: 5px;
+    color: #707070;
+    font-size: 1.5rem;
 }
 
-.gallery{
-    flex: 2;
-    padding: 20px;
-    text-align: center;
+a:hover{
+    color: #A2A998;
 }
 
-.gallery-title{
-    margin-bottom: 50px;
-    font-size: 5em;
-}
-.recipes{
+.outline2{
+    border: 0.1rem solid #887B92;
+    width: 85vw;
+    height: 88vh;
+    margin: 1rem 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.recipe{
-    padding: 10px;
+    gap: 1rem;
 }
 
-.recipe-pic-box{
-    border: 1px solid;
-    padding: 5px;
+.img-box1{
+    background-color: #A2A998;
+    width: 50vw;
 }
 
-.recipe-pic1{
-    height: 300px;
-    width: 300px;
-    background-image: url("./images/banana-muffins.jpg");
-    background-size: 300px;
-}
-
-.recipe-pic2{
-    height: 300px;
-    width: 300px;
-    background-image: url("./images/chai-latte.jpg");
-    background-size: 300px;
-}
-
-.recipe-pic3{
-    height: 300px;
-    width: 300px;
-    background-image: url("./images/red-peas-soup.jpg");
-    background-size: 300px;
-}
-
-
-footer{
-    padding: 5px;
-    margin-left: auto;
-}
-
-.recipe-page-border{
-    background-color: #a18b67;
-    flex: 2;
-    padding: 20px;
-}
-
-.recipe-page{
-    background-color: #eed9c3;
+.recipe-box{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.recipe-pic1b{
-    margin-top: -30px;
-    height: 400px;
-    width: 300px;
-    background-image: url("./images/banana-muffins-nobkgrnd.png");
-    background-size: 300px;
+.recipe-title{
+    font-size: 2rem;
+    padding: 0 12rem;
+}
+
+.recipe-title-right{
+    margin-left: 2rem;
+}
+
+.step-title{
+    font-size: 1.5rem;
 }
 
 .steps{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 40px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
 }
+
