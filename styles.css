@@ -37,7 +37,7 @@ header{
 .outline{
     border: 0.1rem solid #887B92;
     width: 85vw;
-    height: 75vh;
+    height: 73vh;
     margin: 1rem 0;
     display: flex;
     padding: 0.3rem;
@@ -62,12 +62,12 @@ a{
 
 a:hover{
     color: #A2A998;
+    border-bottom: 0.25vh solid #A2A998;
 }
 
 .outline2{
     border: 0.1rem solid #887B92;
     width: 85vw;
-    height: 88vh;
     margin: 1rem 0;
     display: flex;
     gap: 1rem;
@@ -78,6 +78,11 @@ a:hover{
     width: 50vw;
 }
 
+.recipe-title{
+    border-bottom: 1px solid;
+    margin-bottom: 1vh;
+}
+
 .recipe-box{
     padding: 1rem;
     display: flex;
@@ -85,21 +90,22 @@ a:hover{
     justify-content: space-between;
 }
 
-.recipe-title{
-    font-size: 2rem;
-    padding: 0 12rem;
+.ingredients{
+    border-bottom: 3px dotted;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
 }
 
-.recipe-title-right{
-    margin-left: 2rem;
-}
-
-.step-title{
-    font-size: 1.5rem;
-}
 
 .steps{
-    font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-left: 2vw;
+    margin-top: 1vh;
 }
 
+.steps > li{
+    margin-bottom: 0.5vh;
+}
+
+#credits{
+    font-size: 2vh;
+}
