@@ -1,0 +1,8 @@
+<<< --- GUIDELINES --->>>
+1. A h1 title
+2. recipes directory
+3. one recipe per recipe page file
+4. nav menu with recipe links
+5. Recipe structure
+    - Image - h1 Heading - Description - Ingredents - Steps
+6. At least 3 recipes

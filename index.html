@@ -2,26 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes</title>
+    <title>Cozy Cooking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <div>O D I N</div> <!--Used divs instead of h1 for aesthetic purposes-->
-        <div>R E C I P E S</div>
+        <h1><a href="../index.html">Cozy Cooking</a></h1>
+        <nav>
+            <ul>
+                <li class="nav-item recipe-btn">Recipes</li>
+                <li class="nav-item">About</li>
+            </ul>
+        </nav>
     </header>
-    <p id="credits">Carrima Hewitt - 2023</p>
     <div class="content">
-        <div class="outline">
-            <div class="img-box"></div>
-        </div>
-        <div class="recipes">
-            <a href="./recipes/banana-muffins.html">Banana Muffins</a>
-            <a href="./recipes/chai-latte.html">Chai Latte</a>
-            <a href="./recipes/red-peas-soup.html">Red Peas Soup</a>
-        </div>
+        <h1>Cozy Cooking</h1>
+        <img src="./images/home.jpg" alt="table with food overlooking window in the winter" class="home-img" height="330">
+        <nav>
+            <ul>
+                <li class="nav-item recipe-btn">Recipes</li>
+                <li class="nav-item">About</li>
+            </ul>
+        </nav>
     </div>
+    <div id="recipes">
+        <h1>Recipes</h1>
+        <hr>
+        <ul>
+            <li class="nav-item"><a href="./recipes/carrotcake.html">Carrot Cake</a></li>
+            <li class="nav-item"><a href="./recipes/carrotcake.html">Carrot Cake</a></li>
+            <li class="nav-item"><a href="./recipes/carrotcake.html">Carrot Cake</a></li>
+        </ul>
+    </div>
+    <script defer src="./script.js"></script>
 </body>
 </html>

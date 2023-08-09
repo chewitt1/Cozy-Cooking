@@ -1,111 +1,88 @@
-/*Palette:
-  - #DAB1A0
-  - #C1AE9F
-  - #A2A998
-  - #887B92
-  - #947E88
-  - #F3ECE8
-  - #D7BAAD
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
-
 body{
-    display: flex;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #F3ECE8;
-    color: #707070;
+    background-color: rgb(102, 89, 90);
+    color: rgb(78, 67, 68);
+    gap: 24px;
 }
-
 header{
-    display: flex;
-    gap: 30px;
-    font-size: 2.5rem;
-}
-
-.content{
-    flex: 2;
-}
-
-.outline{
-    border: 0.1rem solid #887B92;
-    width: 85vw;
-    height: 73vh;
-    margin: 1rem 0;
-    display: flex;
-    padding: 0.3rem;
-}
-
-.img-box{
-    background-color: #D7BAAD;
-    flex: 2;
-}
-
-.recipes{
-    display: flex;
+    height: 50px; width: 100%;
+    display: flex; align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    padding: 0 10px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(235, 232, 229);
 }
-
+.content{
+    height: 80vh; width: 80vw;
+    position: relative; z-index: 1;
+    background-color: rgb(235, 232, 229);
+    border: 10px ridge rgb(170, 143, 145);
+    display: flex; flex-direction: column; 
+    justify-content: space-between; align-items: center; gap: 16px;
+    text-align: center;
+    padding: 20px;
+    overflow-y: hidden;
+}
+.recipe{
+    min-height: 80vh; width: 90vw;
+    position: relative; z-index: 1;
+    background-color: rgb(235, 232, 229);
+    border: 10px ridge rgb(170, 143, 145);
+    display: flex; flex-direction: column; 
+    justify-content: space-between; align-items: center; gap: 16px;
+    padding: 20px 40px;
+}
+nav > ul{
+    list-style: none;
+    font-weight: bold;
+    display: flex; gap: 50px;
+}
+.nav-item{
+    height: 30px;
+}
+.nav-item:hover, a:hover{
+    cursor: pointer;
+    color: rgb(158, 38, 140);
+    font-size: 24px;
+}
+h1 > a:hover{
+    font-size: 32px;
+}
 a{
     text-decoration: none;
-    color: #707070;
-    font-size: 1.5rem;
+    color: rgb(78, 67, 68);
 }
-
-a:hover{
-    color: #A2A998;
-    border-bottom: 0.25vh solid #A2A998;
+#recipes{
+    height: 100vh; width: 300px;
+    position: fixed; z-index: 2;
+    left: 0;
+    padding: 10px 20px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(235, 232, 229);
+    font-weight: bold;
+    margin-left: -300px;
+    transition: all 0.5s ease-out;
 }
-
-.outline2{
-    border: 0.1rem solid #887B92;
-    width: 85vw;
-    margin: 1rem 0;
-    display: flex;
-    gap: 1rem;
+#recipes > ul{
+    list-style: none;
 }
-
-.img-box1{
-    background-color: #A2A998;
-    width: 50vw;
+#recipes > hr{
+    margin-top: 4px;
 }
-
-.recipe-title{
-    border-bottom: 1px solid;
-    margin-bottom: 1vh;
+#recipes > *{width: 100%;}
+.instructions{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    text-align: left;
 }
-
-.recipe-box{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.ingredients{
-    border-bottom: 3px dotted;
-    margin-bottom: 1vh;
-    padding-bottom: 1vh;
-}
-
-
-.steps{
-    margin-left: 2vw;
-    margin-top: 1vh;
-}
-
-.steps > li{
-    margin-bottom: 0.5vh;
-}
-
-#credits{
-    font-size: 2vh;
+.instructions ul, .instructions ol{
+    margin-left: 15px;
 }
