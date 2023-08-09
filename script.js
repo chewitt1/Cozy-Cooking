@@ -1,5 +1,4 @@
 let recipeBtns = document.querySelectorAll(".recipe-btn");
-console.log(recipeBtns);
 let drawerOpen = false;
 function toggleDrawer(){
     let color = "rgb(158, 38, 140)";
