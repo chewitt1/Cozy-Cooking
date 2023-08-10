@@ -30,6 +30,10 @@ header{
     padding: 20px;
     overflow-y: hidden;
 }
+.about{
+    justify-content: start;
+    padding: 40px 100px;
+}
 
 nav > ul{
     list-style: none;
