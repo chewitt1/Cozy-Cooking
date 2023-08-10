@@ -126,3 +126,7 @@ a{
 .tin > li{
     margin: 6px;
 }
+
+.chai-img{
+    object-position: 0% 95%;
+}
